@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Deklarasi tipe dokumen, memberi tahu browser bahwa ini HTML5 -->
+
+<html lang="en">
+<!-- Atribut lang menetapkan bahasa dokumen untuk SEO & aksesibilitas -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Set encoding karakter ke UTF-8 agar huruf/emoji tampil benar -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Membuat layout responsif di perangkat mobile (skala awal 1.0) -->
+
+    <title>Registrasi</title>
+    <!-- Judul tab browser -->
+</head>
+<body>
+    <h1>Registrasi Akun</h1>
+    <!-- Judul halaman -->
+
+    <!-- Form utama; method POST untuk mengirim data; action bisa diarahkan ke endpoint server -->
+    <form>
+        <legend>Formulir Registrasi</legend>
+        <!-- Legend sebagai judul kelompok field -->
+
+        <fieldset>
+            <!-- Fieldset pengelompokkan-->
+
+            <!-- ====== Nama Lengkap ====== -->
+            <label for="Nama Lengkap">Masukkan Nama Lengkap :</label>
+            <!-- Label terhubung ke input melalui atribut for = id -->
+            <input type="Nama Lengkap" name="Nama Lengkap" id="Nama Lengkap" placeholder="Silahkan Masukkan Nama Lengkap Anda">
+            <br><br>
+            <!-- type="text" untuk input teks umum; id & name tanpa spasi; required agar wajib diisi -->
+
+             <!-- ====== NIM ====== -->
+            <label for="NIM">Masukkan NIM :</label>
+            <input type="NIM" name="Nomor Induk Mahasiswa" id="NIM" required placeholder="Silahkan Masukkan Nomor Induk Mahasiswa">
+            <br><br>
+
+            <!-- ====== Email ====== -->
+            <label for="email">Masukkan E-mail :</label>
+            <input autofocus type="email" name="email" id="email" required placeholder="Silahkan Masukkan E-Mail Anda">
+            <br><br>
+             <!-- type="email" memberi validasi format email bawaan; autofocus memfokuskan kursor saat halaman dimuat -->
+
+             <!-- ====== Jenis Kelamin ====== -->
+            <label for="Jenis Kelamin">Jenis Kelamin</label> <br>
+            <input type="radio" name="Jenis Kelamin" id="Laki-Laki"><label for="Laki-Laki">Laki-Laki</label>
+            <input type="radio" name="Jenis Kelamin" id="Perempuan"><label for="Perempuan">Perempuan</label>
+            <br><br>
+            
+            <!-- ====== Agama (Select) ====== -->
+            <label for="Agama">Agama</label>
+             <!-- id dan for harus sama; required agar pengguna memilih salah satu -->
+            <select id="agama" name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katolik">Katolik</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+                <option value="konghucu">Konghucu</option>
+            </select>
+            <br><br>
+
+            <!-- ====== Password ====== -->
+            <label for="password">Masukkan password:</label>
+            <input type="password" id="password" name="password" required placeholder="Masukkan Password">
+            <br><br>
+
+             <!-- ====== Konfirmasi Password ====== -->
+            <label for="konfirmasi">Konfirmasi password:</label>
+            <input type="password" id="konfirmasi" name="konfirmasi"><br><br>
+            <br>
+
+            <!-- Tombol kirim form -->
+             <input type="submit" value="Daftar">
+        </fieldset>
+    </form>
+</body>
+</html>
